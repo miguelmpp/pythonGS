@@ -1,13 +1,15 @@
-# Computational Thinking With Python - Projeto de Monitoramento da Qualidade da Água dos Oceanos
+# 🌊 Computational Thinking With Python - Projeto de Monitoramento da Qualidade da Água dos Oceanos
 
-## Alunos
+## 👥 Alunos
 - **Matheus Farias de Lima** - RM554254
 - **Miguel Mauricio Parrado Patarroyo** – RM554007
 
-## Descrição do Projeto
+## 📜 Descrição do Projeto
 O nosso trabalho de Python é um protótipo para o "Ocean Health Tracker", uma ferramenta avançada projetada para integrar e analisar dados de múltiplas fontes, proporcionando insights críticos para a tomada de decisões estratégicas na conservação dos oceanos. Utilizando tecnologias avançadas de coleta de dados, análise preditiva e visualização, a plataforma visa monitorar a saúde dos oceanos em tempo real, identificar áreas de risco e promover ações de conservação informadas por dados.
 
-## Instruções de Uso
+> A outra parte do trabalho, que inclui o desenvolvimento Front-end e Web Development, pode ser encontrada em outro repositório: [https://github.com/miguelmpp/GSFrontWebBranch](https://github.com/miguelmpp/GSFrontWebBranch).
+
+## 🛠️ Instruções de Uso
 1. **Clonar o repositório**:
    ```sh
    git clone <URL do repositório>
@@ -27,7 +29,7 @@ O nosso trabalho de Python é um protótipo para o "Ocean Health Tracker", uma f
 4. **Gerar e visualizar os gráficos**:
    - Os gráficos serão gerados automaticamente e exibidos na tela ao executar o script `main.py`.
 
-## Requisitos
+## 📋 Requisitos
 - Python 3.6 ou superior
 - Bibliotecas Python:
   - `requests`
@@ -36,18 +38,18 @@ O nosso trabalho de Python é um protótipo para o "Ocean Health Tracker", uma f
   - `scikit-learn`
   - `numpy`
 
-## Dependências
+## 📦 Dependências
 As dependências podem ser instaladas utilizando o arquivo `requirements.txt` com o seguinte comando:
 ```sh
 pip install -r requirements.txt
 ```
 
-## Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 - `main.py`: Script principal que contém o código do projeto.
 - `ocean_data.csv`: Arquivo CSV gerado com os dados processados.
 - `readme.md`: Documentação do projeto.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 1. **Coleta de Dados**:
    - Utilização da biblioteca `requests` para coletar dados de uma API pública.
    - Tratamento de exceções para lidar com erros na coleta de dados.
@@ -69,14 +71,14 @@ pip install -r requirements.txt
 6. **Tratamento de Exceções**:
    - Implementação de tratamento de exceções para garantir robustez no sistema.
 
-## Atendendo aos Requisitos
+## 📚 Atendendo aos Requisitos
 
-### Conhecimentos básicos em Python
+### 📖 Conhecimentos básicos em Python
 O projeto demonstra conhecimentos básicos em Python através do uso de variáveis, tipos de dados e estruturas de controle. Exemplos incluem:
 - **Variáveis e tipos de dados**: Uso de strings, inteiros, floats e datas.
 - **Estruturas de controle**: Uso de `if`, `elif`, `else` e `for` loops para controle de fluxo e iteração de dados.
 
-### Manipulação de Listas e Strings
+### 📜 Manipulação de Listas e Strings
 A manipulação de listas e strings é exemplificada pela função `process_locations`, que processa uma lista de localizações:
 ```python
 def process_locations(locations):
@@ -84,19 +86,19 @@ def process_locations(locations):
     return processed
 ```
 
-### Conhecimento em Funções
+### 🔍 Conhecimento em Funções
 O projeto utiliza diversas funções definidas pelos alunos, que incluem parâmetros e retornos de valores. Exemplos:
 - `fetch_data(api_url)`: Coleta dados da API.
 - `analyze_data(df)`: Analisa os dados coletados.
 - `machine_learning_example(df)`: Aplica um modelo de machine learning aos dados.
 
-### Noções de Estruturas de Dados
+### 📊 Noções de Estruturas de Dados
 O projeto demonstra entendimento sobre estruturas de dados como listas, dicionários e DataFrames do `pandas`. Exemplos:
 - **Listas**: Utilizadas para armazenar as localizações processadas.
 - **Dicionários**: Utilizados para armazenar os dados coletados da API.
 - **DataFrames**: Utilizados para manipulação e análise de dados.
 
-### Manipulação de Arquivos
+### 🗃️ Manipulação de Arquivos
 O projeto inclui a leitura e escrita de arquivos CSV para armazenamento e recuperação de dados:
 ```python
 def save_to_csv(df, filename):
@@ -109,7 +111,7 @@ def read_from_csv(filename):
     return df
 ```
 
-### Tratamento de Exceções
+### 🔐 Tratamento de Exceções
 O tratamento de exceções é implementado para garantir que o sistema lide com erros de forma robusta:
 ```python
 def fetch_data(api_url):
@@ -123,9 +125,9 @@ def fetch_data(api_url):
         return []
 ```
 
-## Detalhes do Código
+## 🖥️ Detalhes do Código
 
-### Coleta de Dados
+### 📥 Coleta de Dados
 ```python
 def fetch_data(api_url):
     try:
@@ -148,7 +150,7 @@ def fetch_data(api_url):
         return []
 ```
 
-### Processamento de Dados
+### 🔄 Processamento de Dados
 ```python
 df = pd.DataFrame(data)
 df['date'] = pd.to_datetime(df['date'], errors='coerce')
@@ -160,7 +162,7 @@ def analyze_data(df):
     return df
 ```
 
-### Visualização de Dados
+### 📈 Visualização de Dados
 ```python
 def plot_data(df):
     plt.figure(figsize=(10, 5))
@@ -172,7 +174,7 @@ def plot_data(df):
     plt.show()
 ```
 
-### Machine Learning
+### 🤖 Machine Learning
 ```python
 def machine_learning_example(df):
     df = df.dropna(subset=['date', 'water_quality'])
@@ -195,7 +197,7 @@ def plot_predictions(df):
     plt.show()
 ```
 
-### Manipulação de Arquivos
+### 📂 Manipulação de Arquivos
 ```python
 def save_to_csv(df, filename):
     df.to_csv(filename, index=False)
@@ -210,14 +212,14 @@ save_to_csv(df_analyzed, 'ocean_data.csv')
 df_from_file = read_from_csv('ocean_data.csv')
 ```
 
-### Segurança e Privacidade
+### 🔒 Segurança e Privacidade
 ```python
 def secure_data(df):
     df.drop(columns=['sensitive_column'], inplace=True, errors='ignore')
     return df
 ```
 
-### Educação e Engajamento
+### 📚 Educação e Engajamento
 ```python
 def educational_content():
     print("Este script coleta dados ambientais de uma API pública, realiza análises simples e aplica técnicas básicas de machine learning.")
