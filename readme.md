@@ -1,4 +1,4 @@
-# Projeto de Monitoramento da Qualidade da Água dos Oceanos
+# Computational Thinking With Python - Projeto de Monitoramento da Qualidade da Água dos Oceanos
 
 ## Alunos
 - **Matheus Farias de Lima** - RM554254
