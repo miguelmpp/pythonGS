@@ -128,6 +128,5 @@ df_secure = secure_data(df_ml)
 # Educação e Engajamento
 def educational_content():
     print("Este script coleta dados ambientais de uma API pública, realiza análises simples e aplica técnicas básicas de machine learning.")
-    print("É importante entender cada parte do código para apreciar como os dados são coletados, analisados e visualizados.")
 
 educational_content()
